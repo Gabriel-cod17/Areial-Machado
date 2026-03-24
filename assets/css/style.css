@@ -70,7 +70,7 @@
 
 /* Configurando o MAIN */
 
-.main {
+.Principal {
   width: 100%;
   height: 100vh;
   background-image: url("../img/img-main.webp");
@@ -157,7 +157,7 @@
 
 /* Estilizando a SECTION */
 
-.sectionOne {
+.Sobre_Areial {
   background: #ffffff;
 }
 
@@ -227,4 +227,276 @@
   font-size: 0.9rem;
   font-weight: 700;
   color: #171a1fff;
+}
+
+/* Estilizando a section nossos materias */
+
+.Nossos_Materias {
+  background: #fafafbff;
+}
+
+.divNossos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 1.5rem;
+}
+
+.divTwoNossos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.h2DivtwoNossos {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25rem;
+  color: #171a1fff;
+  font-weight: 700;
+}
+
+.hrDivTwoNosso {
+  width: 12rem;
+  height: 0.5vh;
+  background: #fdd01cff;
+  border: 1px solid #fdd01cff;
+  border-radius: 1rem;
+}
+
+.h3DivTwoNossos {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #565d6dff;
+  line-height: 1.813rem;
+  font-weight: 400;
+}
+
+.gridNossos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+.gridOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #fdd01cff;
+  padding: 2.5rem 3rem;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.videoGrid {
+  width: 3rem;
+  height: 3rem;
+}
+
+.h2Grid {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #171a1fff;
+  font-weight: 700;
+}
+
+.h3Grid {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: #565d6dff;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+
+.aGrid {
+  width: 35%;
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition:
+    border 0.8s ease,
+    color 0.8s ease;
+  padding: 0.3rem;
+}
+
+/* Estilizando a section por que */
+
+.PorQue {
+  background: #ffffff;
+}
+
+.divOnePor {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.divTwoPor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.h2divTwoPor {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.25rem;
+  color: #171a1fff;
+  font-weight: 700;
+}
+
+.hrDivTwoPor {
+  width: 5rem;
+  height: 0.5vh;
+  background: #fdd01cff;
+  border: 1px solid #fdd01cff;
+  border-radius: 1rem;
+}
+
+.h3DivTwoPor {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #565d6dff;
+  line-height: 1.813rem;
+  font-weight: 400;
+}
+
+.divThreePor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.divFourPor {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.imgDivFourPor {
+  width: 2rem;
+  height: 2rem;
+}
+
+.divFivePor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.h2DivFivePor {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: #171a1fff;
+  font-weight: 800;
+}
+
+.h3DivFivePor {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #565d6dff;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+
+.divSixPor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridDivSixPor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.gridOneDivSixPor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  background: #fffae5ff;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+
+.gridTwoDivSixPor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  background: #171a1fff;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+
+.imgGridLocal,
+.imgGridPreco {
+  width: 2rem;
+  height: 2rem;
+}
+
+.h2Atendimento {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: #171a1fff;
+  font-weight: 800;
+}
+
+.h2preco {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.h3AmplaArea {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #565d6dff;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+
+.h3OMelhor {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+/* Estilizando o hover */
+
+@media (hover: hover) {
+  /* section nossos materiais grid */
+  .aGrid:hover {
+    border: 1px solid #fdd01cff;
+    border-radius: 1rem;
+    color: #fdd01cff;
+  }
 }
