@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 /* configurando o HEADER / NAV */
 .header {
   display: flex;
@@ -793,6 +799,241 @@
   border: 1px solid #fdd01cff;
   border-radius: 0.5rem;
   background: #fdd01cff;
+}
+
+/* Estilizando a Section Pronto */
+
+.Pronto {
+  background: #fdd01cff;
+}
+
+.divPronto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.h2Pronto {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  color: #171a1fff;
+  font-weight: 800;
+}
+
+.h3NaoDeixa {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  color: #19191fff;
+  line-height: 1.813rem;
+  font-weight: 500;
+}
+
+.aFalarW {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #1bbb5eff;
+  line-height: 1.3rem;
+  font-weight: 400;
+  padding: 0.9rem 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+/* Estilizando a Footer */
+
+.Final_Pagina {
+  background: #171a1fff;
+}
+
+.divFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.divTodosItens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.divFAreial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.pAreialFooter {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pOParceiro {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #565d6dff;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.divContatoR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.pContato {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fdd01cff;
+}
+
+.DivWhatssA,
+.DivLoca {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.imgWhatssA,
+.imgLoca {
+  width: 1rem;
+  height: 1rem;
+}
+
+.aWhatssApp,
+.PAtend {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #565d6dff;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.divServicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.pServicos {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fdd01cff;
+}
+
+.pEntregaBrita,
+.pEntregaAreia,
+.pEntregaTerra,
+.pTerraplanagem,
+.pDiferencias {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #565d6dff;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.hrFooter {
+  border: 1px solid #ffffff33;
+}
+
+.divDesenvolvimento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pReservado {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #565d6dff;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.pDesenvolvido {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #565d6dff;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+/* Estilizando a Div entrando lado esquerdo e direito */
+
+.esquerda {
+  transform: translateX(-40%);
+  opacity: 0;
+  transition:
+    transform 1.5s ease,
+    opacity 1.5s ease;
+}
+
+.direita {
+  transform: translateX(40%);
+  opacity: 0;
+  transition:
+    transform 1.5s ease,
+    opacity 1.5s ease;
+}
+
+.entrouL {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Estilizando a Div entrando lado cima e baixo */
+
+.cima {
+  transform: translateY(-40%);
+  opacity: 0;
+  transition:
+    transform 1.5s ease,
+    opacity 1.5s ease;
+}
+
+.baixo {
+  transform: translateY(40%);
+  opacity: 0;
+  transition:
+    transform 1.5s ease,
+    opacity 1.5s ease;
+}
+
+.entrouC {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /* Estilizando o hover */
