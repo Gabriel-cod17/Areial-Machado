@@ -1068,9 +1068,181 @@ body {
   }
 }
 
-/* estilizando o modo MOBILE CELULAR */
+/* estilizando o modo MOBILE CELULAR PEQUENO */
+@media (min-width: 200px) and (max-width: 359px) {
+  /* NAV */
 
-@media (max-width: 767px) {
+  .ulNav {
+    display: none;
+  }
+
+  .aNav {
+    display: none;
+  }
+
+  /* MAIN */
+
+  .divOne {
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .h3DivOne {
+    font-size: 2rem;
+  }
+
+  .pDivOne {
+    font-size: 1rem;
+  }
+
+  .aDivTwo {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .aDoisDivTwo {
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION SOBRE AREIAL */
+  .divSecOne {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divTwoSecOne {
+    margin-top: 3rem;
+  }
+
+  .hrSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+  }
+
+  .figureCarlos {
+    width: 75%;
+  }
+
+  /* Section materias */
+
+  .h2DivtwoNossos {
+    font-size: 1.6rem;
+  }
+
+  .h3DivTwoNossos {
+    text-align: center;
+  }
+
+  .gridNossos {
+    grid-template-columns: 1fr;
+  }
+
+  .gridOne {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .aGrid {
+    border: 1px solid #fdd01cff;
+    border-radius: 1rem;
+    color: #fdd01cff;
+  }
+
+  /* Section Por que */
+
+  .divOnePor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .divTwoPor {
+    align-items: center;
+    text-align: center;
+  }
+
+  .gridOneDivSixPor,
+  .gridTwoDivSixPor {
+    padding: 2rem;
+  }
+
+  /* Section como funciona  */
+
+  .divH2HrH3 {
+    margin-top: 1rem;
+  }
+  .gridComo {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .aFazerPedido {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+  }
+
+  /* Grid Atendimento */
+  .gridAtendimento {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+
+  .gridsOne {
+    padding: 3rem;
+  }
+
+  .GridsTwo {
+    padding: 3rem;
+  }
+
+  /* Section Pronto */
+
+  .h2Pronto {
+    font-size: 1.6rem;
+  }
+
+  .h3NaoDeixa {
+    font-size: 1.2rem;
+  }
+  .aFalarW {
+    padding: 0.9rem 1rem;
+  }
+
+  /* section atendimento */
+
+  .aChamar {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  .divTodosItens {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* estilizando o modo MOBILE CELULAR */
+@media (min-width: 360px) and (max-width: 767px) {
   /* NAV */
 
   .ulNav {
@@ -1131,7 +1303,7 @@ body {
   /* Section materias */
 
   .h2DivtwoNossos {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .h3DivTwoNossos {
@@ -1150,6 +1322,12 @@ body {
     width: 100%;
     height: 40vh;
     padding: 1rem;
+  }
+
+  .aGrid {
+    border: 1px solid #fdd01cff;
+    border-radius: 1rem;
+    color: #fdd01cff;
   }
 
   /* Section Por que */
@@ -1275,6 +1453,12 @@ body {
     height: 40vh;
     padding: 1rem;
     gap: 2rem;
+  }
+
+  .aGrid {
+    border: 1px solid #fdd01cff;
+    border-radius: 1rem;
+    color: #fdd01cff;
   }
 
   /* Section Por que */
