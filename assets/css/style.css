@@ -92,6 +92,8 @@ body {
   justify-content: center;
   max-width: 1200px;
   min-height: 100vh;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .divOne {
@@ -177,6 +179,25 @@ body {
   margin: 0 auto;
   padding: 1rem;
   gap: 3rem;
+}
+
+.figureCarlos {
+  width: 100%;
+  height: 32rem;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.figureCarlos:hover {
+  transform: scale(1.03);
+}
+
+.imgMiojo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .divTwoSecOne {
@@ -1044,5 +1065,231 @@ body {
     border: 1px solid #fdd01cff;
     border-radius: 1rem;
     color: #fdd01cff;
+  }
+}
+
+/* estilizando o modo MOBILE CELULAR */
+
+@media (max-width: 767px) {
+  /* NAV */
+
+  .ulNav {
+    display: none;
+  }
+
+  .aNav {
+    display: none;
+  }
+
+  /* MAIN */
+
+  .divOne {
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .h3DivOne {
+    font-size: 2.75rem;
+  }
+  .aDivTwo {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .aDoisDivTwo {
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
+
+  /* SECTION SOBRE AREIAL */
+  .divSecOne {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divTwoSecOne {
+    margin-top: 3rem;
+  }
+
+  .hrSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+  }
+
+  .figureCarlos {
+    width: 75%;
+  }
+
+  /* Section materias */
+
+  .h2DivtwoNossos {
+    font-size: 2rem;
+  }
+
+  .h3DivTwoNossos {
+    text-align: center;
+  }
+
+  .gridNossos {
+    grid-template-columns: 1fr;
+  }
+
+  .gridOne {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+  }
+
+  /* Section Por que */
+
+  .divOnePor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .divTwoPor {
+    align-items: center;
+    text-align: center;
+  }
+
+  .gridOneDivSixPor,
+  .gridTwoDivSixPor {
+    padding: 2rem;
+  }
+
+  /* Section como funciona  */
+
+  .divH2HrH3 {
+    margin-top: 1rem;
+  }
+  .gridComo {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .aFazerPedido {
+    margin-bottom: 1rem;
+  }
+
+  /* Grid Atendimento */
+  .gridAtendimento {
+    grid-template-columns: 1fr;
+    margin: 1rem 0;
+  }
+
+  /* Section Pronto */
+
+  .h2Pronto {
+    font-size: 2.2rem;
+  }
+
+  .h3NaoDeixa {
+    font-size: 1.5rem;
+  }
+
+  /* section atendimento */
+
+  .aChamar {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  .divTodosItens {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Media queries tablet */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* MAIN */
+
+  .divOne {
+    gap: 3rem;
+  }
+
+  /* SECTION SOBRE AREIAL */
+  .divSecOne {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divTwoSecOne {
+    margin-top: 3rem;
+  }
+
+  .hrSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+  }
+
+  .figureCarlos {
+    width: 75%;
+  }
+
+  /* Section materias */
+
+  .h2DivtwoNossos {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .h3DivTwoNossos {
+    text-align: center;
+  }
+
+  .gridNossos {
+    grid-template-columns: 1fr;
+  }
+
+  .gridOne {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  /* Section Por que */
+
+  .divOnePor {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .divTwoPor {
+    align-items: center;
+    text-align: center;
   }
 }
