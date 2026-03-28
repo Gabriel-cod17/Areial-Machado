@@ -138,6 +138,10 @@ body {
   text-align: center;
 }
 
+.ativo {
+  display: flex;
+}
+
 /* Configurando o MAIN */
 
 .Principal {
