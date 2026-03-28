@@ -54,13 +54,21 @@ body {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
 }
 
 .liNav {
   display: flex;
   text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.liNav a {
+  text-decoration: none;
+  color: black;
 }
 
 .aNav {
@@ -71,7 +79,63 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   border: 1px solid #fdd01cff;
-  border-radius: 0.1rem;
+  border-radius: 1rem;
+  transition:
+    transform 0.5s ease,
+    color 0.5s ease;
+}
+
+/* Nav Mobile */
+
+.menuMobile {
+  width: 3rem;
+  height: 3rem;
+  display: none;
+}
+
+.navMobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 40vh;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.ulNavMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.liNavMobile {
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.liNavMobile a {
+  text-decoration: none;
+  color: black;
+}
+
+.aNavMobile {
+  text-decoration: none;
+  color: black;
+  background: #fdd01cff;
+  padding: 0.5rem 0.8rem;
+  width: 80%;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid #fdd01cff;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 /* Configurando o MAIN */
@@ -139,7 +203,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .aDivTwo {
@@ -151,6 +215,9 @@ body {
   border: 1px solid black;
   border-radius: 0.5rem;
   text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .aDoisDivTwo {
@@ -161,6 +228,9 @@ body {
   border: 1px solid #fdd01cff;
   border-radius: 0.5rem;
   text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Estilizando a SECTION */
@@ -638,6 +708,9 @@ body {
   border: 1px solid #fdd01cff;
   border-radius: 0.5rem;
   background: #fdd01cff;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Estilizando a Section Atendimento */
@@ -805,6 +878,7 @@ body {
   border: 1px solid #fdd01cff;
   border-radius: 0.5rem;
   background: transparent;
+  transition: transform 0.5s ease;
 }
 
 .aChamar {
@@ -820,6 +894,7 @@ body {
   border: 1px solid #fdd01cff;
   border-radius: 0.5rem;
   background: #fdd01cff;
+  transition: transform 0.5s ease;
 }
 
 /* Estilizando a Section Pronto */
@@ -867,8 +942,12 @@ body {
   font-weight: 400;
   padding: 0.9rem 2rem;
   border: 1px solid #ffffff;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background: #ffffff;
+  transition:
+    transform 0.5s ease,
+    background 0.5s ease,
+    color 0.5s ease;
 }
 
 /* Estilizando a Footer */
@@ -1060,11 +1139,58 @@ body {
 /* Estilizando o hover */
 
 @media (hover: hover) {
+  /* nav */
+
+  .liNav:hover {
+    transform: scale(1.1);
+  }
+
+  .aNav:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+
+  /* main */
+
+  .aDivTwo:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+
+  .aDoisDivTwo:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
   /* section nossos materiais grid */
   .aGrid:hover {
     border: 1px solid #fdd01cff;
     border-radius: 1rem;
     color: #fdd01cff;
+  }
+
+  /* Como funciona */
+
+  .aFazerPedido:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+
+  /* Atendimento */
+
+  .aChamar:hover {
+    transform: scale(1.1);
+  }
+  .aNumero:hover {
+    transform: scale(1.1);
+  }
+
+  /* Pronto */
+
+  .aFalarW:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #1bbb5eff;
+    border: 1px solid #1bbb5eff;
   }
 }
 
@@ -1243,8 +1369,12 @@ body {
 
 /* estilizando o modo MOBILE CELULAR */
 @media (min-width: 360px) and (max-width: 767px) {
-  /* NAV */
+  /* Nav Mobile */
+  .menuMobile {
+    display: flex;
+  }
 
+  /* NAV */
   .ulNav {
     display: none;
   }
