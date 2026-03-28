@@ -10,7 +10,7 @@ export function menuAbriuFechou() {
       menuMobile.style.width = "2rem";
       menuMobile.style.height = "2rem";
     } else {
-      menuMobile.src = "./assets/img/Menu-aberto.webp";
+      menuMobile.src = "./assets/img/menu-aberto.webp";
       menuMobile.style.width = "3rem";
       menuMobile.style.height = "3rem";
     }
@@ -23,7 +23,7 @@ export function menuAbriuFechou() {
         menuMobile.style.width = "2rem";
         menuMobile.style.height = "2rem";
       } else {
-        menuMobile.src = "./assets/img/Menu-aberto.webp";
+        menuMobile.src = "./assets/img/menu-aberto.webp";
         menuMobile.style.width = "3rem";
         menuMobile.style.height = "3rem";
       }
