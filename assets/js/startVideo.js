@@ -1,14 +1,20 @@
 export function startVideo() {
   const videoDivNav = document.getElementById("videoDivNav");
-  const videoGrid = document.getElementById("videoGrid");
+  const videoGridONe = document.getElementById("videoGridONe");
+  const videoGridTwo = document.getElementById("videoGridTwo");
+  const videoGridThree = document.getElementById("videoGridThree");
 
   document.body.addEventListener(
     "touchstart",
     () => {
       videoDivNav.muted = true;
-      videoGrid.muted = true;
+      videoGridONe.muted = true;
+      videoGridTwo.muted = true;
+      videoGridThree.muted = true;
       videoDivNav.play();
-      videoGrid.play();
+      videoGridONe.play();
+      videoGridTwo.play();
+      videoGridThree.play();
     },
     { once: true },
   );
